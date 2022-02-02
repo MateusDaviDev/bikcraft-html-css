@@ -1,0 +1,31 @@
+header {
+  display: grid;
+  gap: 60px;
+}
+
+header img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.lista-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.lista-menu a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  flex-wrap: wrap;
+  border: 2px solid white;
+}
+
+.lista-menu a:hover {
+  border-color: #e21;
+}

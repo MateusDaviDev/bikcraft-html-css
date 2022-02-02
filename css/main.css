@@ -1,0 +1,85 @@
+.conteudo{
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;   
+}
+
+.imagem{
+  max-width: 100%;
+  border-radius: 4px;
+
+}
+
+
+.introducao{
+  padding: 40px;
+  display: grid;
+  text-align: right;
+  justify-items: end;
+  align-content: center;
+  gap: 20px;
+  background-color: white;
+  position: relative;  
+}
+.introducao h1{
+  font-size: 2rem;
+}
+.introducao::before{
+  display: inline-block;  
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+.introducao a{
+  text-decoration: none;
+  background-color: #ee2211;
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+.introducao a:hover{
+  background-color: #900;
+  transition: 0.1s;
+}
+
+.vantagens{
+  align-self: center; 
+  background-image: url("../img/onda.svg");
+}
+
+.vantagens h2{  
+  font-size: 4rem;
+  color:#c6c6c6;
+  text-transform: uppercase;  
+  text-align: right;
+  padding: 40px;
+  
+}
+
+.icone{
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;      
+}
+.icone li:nth-child(odd){
+  background-color: #f7f7f7;
+}
+.icone-item{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 20px;
+  gap:5px 20px;  
+  border-left: 4px solid transparent;
+}
+.icone-item:hover{
+  border-left: 4px solid #e21;
+}
+.icone-item p{
+  grid-column: 2;  
+}
